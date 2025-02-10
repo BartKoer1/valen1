@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .product { display: inline-block; margin: 20px; padding: 10px; border: 1px solid #ddd; }
+        .footer { margin-top: 30px; padding: 10px; background: #f4f4f4; }
+        .product img { width: 150px; height: auto; cursor: pointer; }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переход по паролю</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordInput").value;
+            var correctPassword = "сто 23"; 
+            
+            if (password === correctPassword) {
+                window.location.href = "fifth.html"; 
+            } else {
+                alert("ну нет, там слово і число");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>йоу ти і правда нажала на нейо, но зачем, тут же продолженіє</h1>
+    <h1>тебе всьо мало????????? бож ну ок</h1>
+    <h1>следуща загадка</h1>
+    <h2>Сколька дней ми вже вместе</h2>
+    <input type="text" id="passwordInput" placeholder="піші">
+    <button onclick="checkPassword()">тебе сюда</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .product { display: inline-block; margin: 20px; padding: 10px; border: 1px solid #ddd; }
+        .footer { margin-top: 30px; padding: 10px; background: #f4f4f4; }
+        .product img { width: 150px; height: auto; cursor: pointer; }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переход по паролю</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordInput").value;
+            var correctPassword = "семь"; 
+            
+            if (password === correctPassword) {
+                window.location.href = "third.html"; 
+            } else {
+                alert("ти ріл цифрой пішеш?");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>ВОООООООУ вот ето ти молодчінка</h1>
+    <h1>БУУУУУ</h1>
+    <h1>а тьі думала ето всьо??? дащас і так загадка номер два</h1>
+    <h2>Сколька в слове абрикос букв</h2>
+    <input type="text" id="passwordInput" placeholder="піші">
+    <button onclick="checkPassword()">тебе сюда</button>
+</body>
+</html>

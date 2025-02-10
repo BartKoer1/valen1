@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .product { display: inline-block; margin: 20px; padding: 10px; border: 1px solid #ddd; }
+        .footer { margin-top: 30px; padding: 10px; background: #f4f4f4; }
+        .product img { width: 150px; height: auto; cursor: pointer; }
+    </style>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переход по паролю</title>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("passwordInput").value;
+            var correctPassword = "дааа"; 
+            
+            if (password === correctPassword) {
+                window.location.href = "six.html"; 
+            } else {
+                alert("єслі чо в слові да написано 3 а");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>БУУУУУ іспугалас</h1>
+    <h1>вітаю ти блізішся к концу</h1>
+    <h2>ти самая красівая дівчина???</h2>
+    <input type="text" id="passwordInput" placeholder="піші">
+    <button onclick="checkPassword()">тебе сюда</button>
+</body>
+</html>
